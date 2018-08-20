@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.android.wan.com.user_related">
+
+
+    <application
+        android:name=".UserApp"
+        android:allowBackup="true"
+        android:label="@string/user_app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+
+        <activity android:name=".LoginActivity"/>
+
+    </application>
+</manifest>

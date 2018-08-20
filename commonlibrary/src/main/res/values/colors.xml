@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--btn unEnable-->
+    <color name="light_blue_color">#3c4b7d</color>
+    <!--btn enable-->
+    <color name="blue_color">#635ae7</color>
+    <!--btn press-->
+    <color name="more_blue_color">#4239ae</color>
+    <color name="c_title_text">#d9d6fc</color>
+    <color name="round_rect_bg">#cc000000</color>
+    <color name="c_normal_dot">#7ffffdf8</color>
+    <color name="c_focus_dot">#fffdf8</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_title_background">#4239ae</color>
+    <color name="tab_unselect">#c9c9c9</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="colorPrimary">#3F51B5</color>
+</resources>
