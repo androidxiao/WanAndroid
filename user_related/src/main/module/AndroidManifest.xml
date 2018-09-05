@@ -3,7 +3,6 @@
 
 
     <application
-        android:name=".UserApp"
         android:allowBackup="true"
         android:label="@string/user_app_name"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"

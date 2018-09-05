@@ -35,19 +35,19 @@ public class MainFragment extends BaseFragment {
     @Override
     public View initLayout(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.appmain_fg_main, container, false);
-        ;
+
         initBottomBarView(view);
         return view;
     }
 
     @Override
-    public void initView(Bundle savedInstanceState) {
+    public void initView(View view,Bundle savedInstanceState) {
         HomeFragment homeFragment = findChildFragment(HomeFragment.class);
         if (homeFragment == null) {
             mFragments[0] = HomeFragment.getInstance("");
             mFragments[1] = KnowledgeFragment.getInstance("");
             mFragments[2] = NavigatorFragment.getInstance("");
-            mFragments[3] = ProjectFragment.getInstance("");
+            mFragments[3] = NavigatorFragment.getInstance("");
             loadMultipleRootFragment(R.id.fl_tab_container, 0, mFragments[0], mFragments[1], mFragments[2], mFragments[3]);
         } else {
             mFragments[0] = homeFragment;

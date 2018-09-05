@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="appmain_d_52">52dp</dimen>
+    <dimen name="appmain_d_35">35dp</dimen>
+    <dimen name="appmain_d_2">2dp</dimen>
+    <dimen name="appmain_d_110">110dp</dimen>
+    <dimen name="appmain_d_120">120dp</dimen>
+    <dimen name="appmain_d_90">90dp</dimen>
+    <dimen name="appmain_d_16">16dp</dimen>
+    <dimen name="appmain_d_10">10dp</dimen>
+
+
+
+
+    <dimen name="appmain_s_15">15sp</dimen>
+    <dimen name="appmain_s_13">13sp</dimen>
 </resources>

@@ -1,3 +1,4 @@
 <resources>
     <string name="appmain_app_name">main.construction.cn</string>
+    <string name="appmain_no_load_more">加载完了</string>
 </resources>

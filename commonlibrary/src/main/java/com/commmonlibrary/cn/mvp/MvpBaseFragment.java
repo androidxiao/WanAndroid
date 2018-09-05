@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.commmonlibrary.cn.base.BaseFragment;
+import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ public abstract class MvpBaseFragment<V extends MvpView, P extends MvpPresenter>
     /**
      * 所有 Presenter 的实现类的实例给 mPresenter
      */
-    protected P mPresenter;
+    protected P mPresenter = this.getPresenter();
     /**
      * 可能一个类中不止一个 Presenter，这里用 list 存储
      */
@@ -30,7 +31,18 @@ public abstract class MvpBaseFragment<V extends MvpView, P extends MvpPresenter>
 
         mListPresenter = new ArrayList<>();
 
+        if (savedInstanceState == null) {
+
+            if (mPresenter == null) {
+                Logger.e("请重写getPresenter()方法，不能直接返回空!", new Object[0]);
+            }
+
+            mPresenter.onAttach(this);
+        }
+
+
     }
+
 
     @Override
     public void onDestroyView() {
@@ -53,6 +65,9 @@ public abstract class MvpBaseFragment<V extends MvpView, P extends MvpPresenter>
             mListPresenter.clear();
         }
     }
+
+    protected abstract P getPresenter();
+
 
     @Override
     public void showLoading() {

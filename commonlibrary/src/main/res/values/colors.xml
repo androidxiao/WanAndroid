@@ -11,7 +11,7 @@
     <color name="c_normal_dot">#7ffffdf8</color>
     <color name="c_focus_dot">#fffdf8</color>
 
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ed4040</color>
     <color name="color_title_background">#4239ae</color>
     <color name="tab_unselect">#c9c9c9</color>
 
@@ -20,4 +20,9 @@
     <color name="gplus_color_3">#427fed</color>
     <color name="gplus_color_4">#b23424</color>
     <color name="colorPrimary">#3F51B5</color>
+
+    <color name="c_4239ae">#4239ae</color>
+    <color name="c_fff">#fff</color>
+    <color name="c_d9d6fc">#d9d6fc</color>
+
 </resources>

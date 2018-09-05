@@ -80,5 +80,11 @@ dependencies {
     annotationProcessor librarys.arouterProcessor
     api librarys.multidex
     api librarys.logger
+    api librarys.retrofit2
+    api librarys.retrofit2ConverterGson
+    api librarys.retrofit2Adapter
+    api librarys.okhttp3Log
+    api librarys.flycoTablayout
+    api librarys.andoridUtilsCode
 
 }

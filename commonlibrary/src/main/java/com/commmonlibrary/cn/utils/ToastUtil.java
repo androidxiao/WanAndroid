@@ -19,7 +19,7 @@ public class ToastUtil {
      * @param context
      * @param text
      */
-    public static void showShortToast(Context context, String text) {
+    public static void showShortToast(Context context,String text) {
         CommonToast.makeText(context, text, Toast.LENGTH_SHORT).show();
     }
 

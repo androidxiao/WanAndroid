@@ -1,12 +1,15 @@
 package com.mainconstruction.cn.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.commmonlibrary.cn.mvp.MvpBaseFragment;
+import com.commmonlibrary.cn.mvp.MvpPresenter;
 import com.mainconstruction.cn.R;
+import com.mainconstruction.cn.fragment.presenterImpl.ProjectTitlePresenterImpl;
 
 /**
  * Created by chawei on 2018/8/19.
@@ -33,12 +36,17 @@ public class NavigatorFragment extends MvpBaseFragment {
     }
 
     @Override
-    public void initView(Bundle savedInstanceState) {
-
+    public void initView(View view,Bundle savedInstanceState) {
+        Log.d(TAG, "initView: NavigatorNavigatorNavigatorNavigatorNavigatorNavigator");
     }
 
     @Override
     public void onClick(View v) {
 
+    }
+
+    @Override
+    protected MvpPresenter getPresenter() {
+        return new ProjectTitlePresenterImpl();
     }
 }

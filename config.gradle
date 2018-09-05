@@ -50,7 +50,9 @@ ext {
             arouterProcessor      : "1.1.4",
             butterknife           : "8.4.0",
             butterknifeProcessor  : "8.4.0",
-            logger                : "2.2.0"
+            logger                : "2.2.0",
+            flycoTablayout        : "2.1.2@aar",
+            androidUtilsCode      : "1.20.0"
     ]
 
     dependencies = [
@@ -94,7 +96,9 @@ ext {
             arouterProcessor      : "com.alibaba:arouter-compiler:${threePart.arouterProcessor}",
             butterknife           : "com.jakewharton:butterknife:${threePart.butterknife}",
             butterknifeProcessor  : "com.jakewharton:butterknife-compiler:${threePart.butterknifeProcessor}",
-            logger                : "com.orhanobut:logger:${threePart.logger}"
+            logger                : "com.orhanobut:logger:${threePart.logger}",
+            flycoTablayout        : "com.flyco.tablayout:FlycoTabLayout_Lib:${threePart.flycoTablayout}",
+            andoridUtilsCode       : "com.blankj:utilcode:${threePart.androidUtilsCode}"
     ]
 
 }
